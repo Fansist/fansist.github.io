@@ -82,7 +82,7 @@ export default defineConfig(({ command }) => {
   const environment = command === 'serve' ? 'dev' : 'stable';
 
   return {
-    base: '/unblocked/',
+    base: '/',
     plugins: [
       react(),
       vitePluginBundleObfuscator(obf),
