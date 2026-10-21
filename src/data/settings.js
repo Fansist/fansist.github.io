@@ -201,7 +201,7 @@ export const advancedConfig = ({ options, updateOption }) => ({
     desc: 'Configure the websocket server location.',
     value: options.wServer
       ? options.wServer
-      : `${location.protocol === 'https:' ? 'wss:' : 'ws:'}//${location.host}/wisp/`,
+      : 'wss://unblocked-3m3f.onrender.com/wisp/',
     type: 'input',
     action: (b) => updateOption({ wServer: b || null }),
   },

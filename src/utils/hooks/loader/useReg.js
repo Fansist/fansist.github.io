@@ -5,7 +5,7 @@ import { makecodec } from './of';
 
 export default function useReg() {
   const { options } = useOptions();
-  const defaultWs = `${location.protocol == 'http:' ? 'ws:' : 'wss:'}//${location.host}/wisp/`;
+  const defaultWs = 'wss://unblocked-3m3f.onrender.com/wisp/';
   const sws = [
     { path: new URL('/sw.js', location.origin).href, scope: new URL('/portal/k12/', location.origin).href },
     { path: new URL('/s_sw.js', location.origin).href, scope: new URL('/ham/', location.origin).href }
